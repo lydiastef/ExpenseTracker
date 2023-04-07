@@ -1,10 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import Graph from './Components/Graph';
 
 function App() {
   return (
     <div className="App">
-      <h1>Expense Tracker</h1>
+      <div className='container'>
+        <h1>Expense Tracker</h1>
+      </div>
+      <Graph></Graph>
     </div>
   );
 }
