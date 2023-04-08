@@ -18,7 +18,7 @@ export default function Form() {
                     <div className='input-group'>
                         <input type='text' {...register('name')} placeholder='Salary, House rent, Dogsit' className='form-input'></input>
                     </div>
-                    <select className='form-input' {...register('type')}>
+                    <select className='form-input1' {...register('type')}>
                         <option value='Investment' defaultValue>Investment</option>
                         <option value='Expense' defaultValue>Expense</option>
                         <option value='Savings' defaultValue>Savings</option>
@@ -26,7 +26,7 @@ export default function Form() {
                     <div className='input group'>
                         <input type='text' {...register('amount')} placeholder='Amount' className='form-input'></input>
                     </div>
-                    <div className='submitbtn'>
+                    <div className='containerbtn'>
                         <button className='submitbtn'>Submit</button>
                     </div>
                 </div>

@@ -8,8 +8,10 @@ function App() {
       <div className='container'>
         <h1>Expense Tracker</h1>
       </div>
-      <Graph></Graph>
-      <Form></Form>
+      <div className='formgraph'>
+        <Form></Form>
+        <Graph></Graph>
+      </div>
     </div>
   );
 }
