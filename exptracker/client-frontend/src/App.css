@@ -28,3 +28,17 @@ h1 {
   background-color: var(--color-dark);
   color: white;
 }
+
+#myChart {
+  width: 500px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+.graph-container {
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+}

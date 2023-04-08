@@ -1,7 +1,10 @@
 import React from 'react'
 import {Bar} from 'react-chartjs-2';
-import {Chart, BarElement} from 'chart.js'
+import {Chart} from 'chart.js'
 import { CategoryScale } from 'chart.js/auto';
+import '../App.css';
+import Labels from './Labels';
+
 
 const labels = [];
 const today = new Date();
@@ -14,7 +17,7 @@ for (let i = 6; i >= 0; i--) {
 const data = {
   labels: labels,
   datasets: [{
-    label: 'My First Dataset',
+    label: 'Incomes',
     data: [65, 59, 80, 81, 56, 55, 40],
     backgroundColor: [
       'rgba(255, 99, 132, 0.2)',
@@ -35,7 +38,10 @@ const data = {
         'rgb(201, 203, 207)'
       ],
       borderWidth: 1
-    }]
+    }],
+    options: {
+        cutout: 115
+    }
 };
 
 const config = {
@@ -60,11 +66,26 @@ const config = {
           stepSize: 10
         }
       }
-    }
+    },
+    responsive: true,
+    maintainAspectRatio:false,
+    plugins: {
+        legend: {
+            position: 'top',
+        },
+    },
+    layout: {
+        margin: {
+            left: 50,
+            right: 50,
+            top: 50,
+            bottom: 50,
+        },
+    },
   },
 };
 
-const myChart = new Chart(document.getElementById('myChart'), config);
+const canvas = document.getElementById('myChart');
 
 
 
@@ -78,6 +99,7 @@ export default function Graph() {
             </div>
 
             <div className='labels-container'>
+                <Labels></Labels>
             </div>
         </div>
     )
