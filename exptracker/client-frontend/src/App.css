@@ -53,6 +53,7 @@ form {
   align-items: center;
   justify-content: center;
   width: 26em;
+  margin-top: 3em;
 }
 
 .formh1 {
@@ -88,12 +89,51 @@ form {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   border: 1px solid #ccc;
   border-radius: 6px;
-  padding: .4em .9em;
+  padding: .6em .9em;
   background-color: var(--color-dark);
   color: white;
   font-size: 16px;
   font-weight: bold;
   letter-spacing: .08em;
+  cursor: pointer;
+}
+
+.listcontainer {
+  display: block;
+}
+
+.listh3 {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 1.5em;
+}
+
+.listcategory {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.savings {
+  width: 50%;
+  margin-bottom: 1em;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: .4em .7em;
+}
+
+.listbtn {
+  float: right;
+  border: none;
+  background-color: white;
+}
+
+.trash {
+  width: 2em;
+  height: 1.3em;
+  padding-top: .2em;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 600px) {
